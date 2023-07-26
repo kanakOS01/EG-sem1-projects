@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --main-bg-color: rgb(21, 193, 156);
+    --main-color: black;
+}
+
+* {
+    /* background-color: var(--main-bg-color); */
+    margin: 0;padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: var(--main-bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 500px;
+    width: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .heading {
+    font-size: 50px;
+}
+
+.container .item {
+    width: 500px;
+
+}
+
+.container .item .field {
+    columns: var(--main-bg-color);
+    padding-left: 10px;
+    font-size: 20px;
+    color: var(--main-bg-color);
+    cursor: default;
+}
+
+.container .item input {
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid grey;
+    border-top: 0.5px solid white;
+    padding: 10px;
+    width: 480px;
+    font-size: 15px;
+}
+
+.container .item input:focus {
+    border-bottom: 2.5px solid var(--main-bg-color);
+    border-top: 0;
+}
+
+.container button {
+    width: 500px;
+    height: 70px;
+    background-color: var(--main-bg-color);
+    color: white;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: rgb(18, 175, 141);
+}
+
+.container button:active {
+    background-color: rgb(14, 148, 119);
+}
+
+.container .forgot-pwd {
+    color: rgb(69, 69, 69);
+    cursor: pointer;
+}
+
+.container .forgot-pwd:hover {
+    color: rgb(0, 0, 0);
+}
